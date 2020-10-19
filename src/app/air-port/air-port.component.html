@@ -1,1 +1,43 @@
-<p>air-port works!</p>
+<form>
+<div class="container">
+  <div class="form-row">
+    <div class="col-sm">
+      <label >Origination ariport:</label>
+      <select class="form-control">
+        <option>NY</option>
+        <option>LA</option>
+        <option>CHI</option>
+        <option>WAS</option>
+      </select>
+    </div>
+
+    <div class="col-sm">
+      <label>Destination airport:</label>
+      <select class="form-control">
+        <option>NY</option>
+        <option>LA</option>
+        <option>CHI</option>
+        <option>WAS</option>
+      </select>
+    </div>
+
+    <div class="col-sm">
+      <label>Number of passenger:</label>
+      <input type="number" class="form-control" (click) = "count()" id= "numppl" [(ngModel)]="numppl" name="numppl">
+    </div>
+
+    <div class="col-sm">
+      <label>Date</label>
+      <input class="form-control" type="datetime-local" value="2020-10-19T12:00:00">
+    </div>
+  </div>
+  <div class ="row mt-3">
+    <div class="col-8">
+      Total cost: {{result}}
+    </div>
+    <div class ="col-4">
+      <button class = "btn float-right btn-success" type="submit"> Submit</button>
+    </div>
+  </div>
+</div>
+</form>

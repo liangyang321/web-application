@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AirPortComponent implements OnInit {
 
-  constructor() { }
+  numppl: number = 0; // number of passanger
+  result: number = 0; // total cost of passanger
+  constructor() {}
 
   ngOnInit(): void {
+  }
+
+
+  // count total cost for passanger
+  count(): void{
+    this.result = this.numppl * 150;
   }
 
 }
