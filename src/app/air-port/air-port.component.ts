@@ -17,7 +17,12 @@ export class AirPortComponent implements OnInit {
 
   // count total cost for passanger
   count(): void{
+    if (this.numppl > 0){
     this.result = this.numppl * 150;
+    }else
+    {
+      this.result = 0;
+    }
   }
 
 }
