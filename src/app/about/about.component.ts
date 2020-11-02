@@ -12,6 +12,4 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  environment = 'Windows 10 and WSL';
-  ide = 'VS Code';
 }
